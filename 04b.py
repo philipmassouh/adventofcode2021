@@ -32,5 +32,5 @@ for d in draw:
                     winners[i] = (ans,s*d)
 
 
-print(winners[list(winners)[0]])
-print(winners[list(winners)[-1]])
+print(winners[list(winners)[0]])    # first winner
+print(winners[list(winners)[-1]])   # last winner
