@@ -1,9 +1,3 @@
-a = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-]
+a = [[False], [False], [True]]
 
-# a = list(map(list, list(zip(*a))))
-a = list(map(list, list(zip(*a))))
-print(a)
+print(False in [x[0] for x in a])
