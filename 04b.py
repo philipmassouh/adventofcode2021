@@ -16,6 +16,7 @@ with open("04.csv") as f:
         else:
             board.append([b[int(i)] for i in filter(None,row[0].split(" "))])
 
+winners = {}
 for d in draw:
     line = []
     b[d][0] = True
@@ -27,11 +28,9 @@ for d in draw:
                 for row in brd[:5]:
                     for v in row:
                         s += v[1] if not v[0] else 0
-                print(f"board {i} wins | {ans} | {s*d}")
-                break
-        else:
-            continue
-        break
-    else:
-        continue
-    break
+                if i not in winners.keys():
+                    winners[i] = (ans,s*d)
+
+
+print(winners[list(winners)[0]])
+print(winners[list(winners)[-1]])
