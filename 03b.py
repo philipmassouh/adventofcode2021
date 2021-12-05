@@ -47,9 +47,7 @@ oxy = int("".join([str(v[0]) for v in values]), 2)
 
 
 # we repeat the exact same process with only one change:
-# most_common = int(column.count(1) 
-#                                       (>=) --> (<) 
-#                                                       column.count(0))
+# most_common = int(column.count(1)      (>=) --> (<)     column.count(0))
 values = list(map(list, list(zip(*values_base))))
 for column in values:
     if len(values[0]) < 2:
