@@ -7,7 +7,7 @@ def read_csv(filename):
 
 last_val = -1
 increases = -1
-for i,val in enumerate(read_csv("001.csv")):
+for i,val in enumerate(read_csv("01.csv")):
     if last_val < val:
         increases += 1
     last_val = val

@@ -11,7 +11,7 @@ def read_csv(filename):
             lazy.append(int(row[0]))
     return lazy
 
-m = read_csv("001.csv")
+m = read_csv("01.csv")
 
 increases = 0
 for i in range(len(m) - 3):
